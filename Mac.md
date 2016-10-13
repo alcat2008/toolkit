@@ -2,9 +2,9 @@
 
 --------------------------------------------------------------------------------
 
-# KEYMAP
+# 键盘符号 KEYMAP
 
-![mac_keymap](../resources/mac_keymap.jpg)
+![mac_keymap](./resources/mac_keymap.jpg)
 
 --------------------------------------------------------------------------------
 
@@ -48,3 +48,24 @@ killall Finder
 --------------------------------------------------------------------------------
 
 # 快捷键 shortcuts
+
+本文仅列出常用的快捷键，详细请参考官网 [Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
+
+Command-Z
+
+`cmd-z` 撤销<br>
+`cmd-shift-z` 重做<br>
+`cmd-x` 拷贝<br>
+`cmd-c` 拷贝<br>
+`cmd-v` 粘贴<br>
+`cmd-a` 全选<br>
+`cmd-s` 保存<br>
+`cmd-f` 查找<br>
+`cmd-q` 退出<br>
+`cmd-option-esc` 强制退出应用程序<br>
+
+`cmd-h` 隐藏当前应用程序窗口<br>
+`cmd-option-h` 隐藏其他应用程序窗口<br>
+
+`cmd-shift-3` 截取全部屏幕<br>
+`cmd-shift-4` 截取部分屏幕<br>
