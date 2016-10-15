@@ -23,11 +23,11 @@
 `ctrl-f` 前一个字符<br>
 `ctrl-b` 后一个字符
 
-`alt-B`, `alt-left` 移动到单词开始<br>
-`alt-F`, `alt-right` 移动到单词末尾
+`alt-b`, `alt-left` 移动到单词开始<br>
+`alt-f`, `alt-right` 移动到单词末尾
 
-`cmd-right`, `ctrl-E` 移动到一行结束<br>
-`cmd-left`, `ctrl-A` 移动到一行开始
+`cmd-right`, `ctrl-e` 移动到一行结束<br>
+`cmd-left`, `ctrl-a` 移动到一行开始
 
 `cmd-up` 移动到文件开始<br>
 `cmd-down` 移动到文件结束
@@ -39,7 +39,7 @@
 ## 目录树操作
 
 `cmd-\` 或者 `cmd-k cmd-b` 显示(隐藏)目录树<br>
-`ctrl-0` 焦点切换到目录树(再按一次或者`Esc`退出目录树)<br>
+`ctrl-0` 焦点切换到目录树(再按一次或者`esc`退出目录树)<br>
 `a` 添加文件<br>
 `d` 将当前文件另存为(duplicate)<br>
 `i` 显示(隐藏)版本控制忽略的文件<br>
@@ -51,79 +51,79 @@
 `cmd-k j` 或者 `cmd-k down` 在下半视图中打开文件<br>
 `cmd-k k` 或者 `cmd-k up` 在上半视图中打开文件<br>
 `cmd-k l` 或者 `cmd-k right` 在右半视图中打开文件<br>
-`ctrl-shift-C` 复制当前文件绝对路径
+`ctrl-shift-c` 复制当前文件绝对路径
 
 ## 书签
 
-`cmd-F2` 在本行增加书签<br>
-`F2` 跳到当前文件的下一条书签<br>
-`shift-F2` 跳到当前文件的上一条书签<br>
-`ctrl-F2` 列出当前工程所有书签
+`cmd-f2` 在本行增加书签<br>
+`f2` 跳到当前文件的下一条书签<br>
+`shift-f2` 跳到当前文件的上一条书签<br>
+`ctrl-f2` 列出当前工程所有书签
 
 ## 选取
 
 > 大部分和导航一致，只不过加上shift
 
-`ctrl-shift-P` 选取至上一行<br>
-`ctrl-shift-N` 选取至下一样<br>
-`ctrl-shift-B` 选取至前一个字符<br>
-`ctrl-shift-F` 选取至后一个字符<br>
-`alt-shift-B`, `alt-shift-left` 选取至字符开始<br>
-`alt-shift-F`, `alt-shift-right` 选取至字符结束<br>
-`ctrl-shift-E`, `cmd-shift-right` 选取至本行结束<br>
-`ctrl-shift-A`, `cmd-shift-left` 选取至本行开始<br>
+`ctrl-shift-p` 选取至上一行<br>
+`ctrl-shift-n` 选取至下一样<br>
+`ctrl-shift-b` 选取至前一个字符<br>
+`ctrl-shift-f` 选取至后一个字符<br>
+`alt-shift-b`, `alt-shift-left` 选取至字符开始<br>
+`alt-shift-f`, `alt-shift-right` 选取至字符结束<br>
+`ctrl-shift-e`, `cmd-shift-right` 选取至本行结束<br>
+`ctrl-shift-a`, `cmd-shift-left` 选取至本行开始<br>
 `cmd-shift-up` 选取至文件开始<br>
 `cmd-shift-down` 选取至文件结尾<br>
-`cmd-A` 全选<br>
-`cmd-L` 选取一行，继续按回车选取下一行<br>
-`ctrl-shift-W` 选取当前单词
+`cmd-a` 全选<br>
+`cmd-l` 选取一行，继续按回车选取下一行<br>
+`ctrl-shift-w` 选取当前单词
 
 ## 编辑和删除文本
 
 ### 基本操作
 
-`ctrl-T` 使光标前后字符交换<br>
-`cmd-J` 将下一行与当前行合并<br>
+`ctrl-t` 使光标前后字符交换<br>
+`cmd-j` 将下一行与当前行合并<br>
 `ctrl-cmd-up`, `ctrl-cmd-down` 使当前行向上或者向下移动<br>
-`cmd-shift-D` 复制当前行到下一行<br>
-`cmd-K`, `cmd-U` 使当前字符大写<br>
-`cmd-K`, `cmd-L` 使当前字符小写
+`cmd-shift-d` 复制当前行到下一行<br>
+`cmd-k`, `cmd-u` 使当前字符大写<br>
+`cmd-k`, `cmd-l` 使当前字符小写
 
 ### 删除和剪切
 
-`ctrl-shift-K` 删除当前行<br>
+`ctrl-shift-k` 删除当前行<br>
 `cmd-backspace` 删除到当前行开始<br>
 `cmd-fn-backspace` 删除到当前行结束<br>
-`ctrl-K` 剪切到当前行结束<br>
-`alt-backspace` 或 `alt-H` 删除到当前单词开始<br>
-`alt-delete` 或 `alt-D` 删除到当前单词结束
+`ctrl-k` 剪切到当前行结束<br>
+`alt-backspace` 或 `alt-h` 删除到当前单词开始<br>
+`alt-delete` 或 `alt-d` 删除到当前单词结束
 
 ### 多光标和多处选取
 
 `cmd-click` 增加新光标<br>
-`cmd-shift-L` 将多行选取改为多行光标<br>
+`cmd-shift-l` 将多行选取改为多行光标<br>
 `ctrl-shift-up`, `ctrl-shift-down` 增加上（下）一行光标<br>
-`cmd-D` 选取文档中和当前单词相同的下一处<br>
-`ctrl-cmd-G` 选取文档中所有和当前光标单词相同的位置
+`cmd-d` 选取文档中和当前单词相同的下一处<br>
+`ctrl-cmd-g` 选取文档中所有和当前光标单词相同的位置
 
 ### 括号跳转
 
 `ctrl-m` 相应括号之间，html tag之间等跳转<br>
 `ctrl-cmd-m` 括号(tag)之间文本选取<br>
-`alt-cmd-.` 关闭当前XML/HTML tag
+`alt-cmd-.` 关闭当前xml/html tag
 
 ### 编码方式
 
-`ctrl-shift-U` 调出切换编码选项
+`ctrl-shift-u` 调出切换编码选项
 
 ## 查找和替换
 
-`cmd-F` 在buffer中查找<br>
+`cmd-f` 在buffer中查找<br>
 `cmd-shift-f` 在整个工程中查找
 
 ## 代码片段
 
-`alt-shift-S` 查看当前可用代码片段
+`alt-shift-s` 查看当前可用代码片段
 
 > 在`~/.atom`目录下`snippets.cson`文件中存放了你定制的snippets
 
@@ -139,32 +139,32 @@
 `alt-cmd-]` 展开<br>
 `alt-cmd-shift-{` 折叠全部<br>
 `alt-cmd-shift-}` 展开全部<br>
-`cmd-k cmd-N` 指定折叠层级 N为层级数
+`cmd-k cmd-n` 指定折叠层级 n为层级数
 
 ## 文件语法高亮
 
-`ctrl-shift-L` 选择文本类型
+`ctrl-shift-l` 选择文本类型
 
-## 使用Atom进行写作
+## 使用atom进行写作
 
-`ctrl-shift-M` Markdown预览<br>
+`ctrl-shift-m` markdown预览<br>
 可用代码片段
 
 > b, legal, img, l, i, code, t, table
 
 ## git操作
 
-`cmd-alt-Z` checkout HEAD 版本<br>
-`cmd-shift-B` 弹出untracked 和 modified文件列表<br>
+`cmd-alt-z` checkout head 版本<br>
+`cmd-shift-b` 弹出untracked 和 modified文件列表<br>
 `alt-g down` `alt-g up` 在修改处跳转<br>
-`alt-G D` 弹出diff列表<br>
-`alt-G O` 在github上打开文件<br>
-`alt-G G` 在github上打开项目地址<br>
-`alt-G B` 在github上打开文件blame<br>
-`alt-G H` 在github上打开文件history<br>
-`alt-G I` 在github上打开issues<br>
-`alt-G R` 在github打开分支比较<br>
-`alt-G C` 拷贝当前文件在gihub上的网址
+`alt-g d` 弹出diff列表<br>
+`alt-g o` 在github上打开文件<br>
+`alt-g g` 在github上打开项目地址<br>
+`alt-g b` 在github上打开文件blame<br>
+`alt-g h` 在github上打开文件history<br>
+`alt-g i` 在github上打开issues<br>
+`alt-g r` 在github打开分支比较<br>
+`alt-g c` 拷贝当前文件在gihub上的网址
 
 ## 推荐一些好用的插件
 
@@ -189,5 +189,3 @@
 - 便捷操作<br>
   [advanced-open-file](https://atom.io/packages/advanced-open-file) 快速打开、切换文件<br>
   [project-folder](https://atom.io/packages/project-folder) 快速打开、切换项目
-
-就这些了，欢迎pull更多好用的插件！

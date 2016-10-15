@@ -62,10 +62,11 @@ Command-Z
 `cmd-s` 保存<br>
 `cmd-f` 查找<br>
 `cmd-q` 退出<br>
-`cmd-option-esc` 强制退出应用程序<br>
+`cmd-alt-esc` 强制退出应用程序<br>
 
+`cmd-m` 最小化当前应用程序窗口<br>
 `cmd-h` 隐藏当前应用程序窗口<br>
-`cmd-option-h` 隐藏其他应用程序窗口<br>
+`cmd-alt-h` 隐藏其他应用程序窗口<br>
 
 `cmd-shift-3` 截取全部屏幕<br>
 `cmd-shift-4` 截取部分屏幕<br>
