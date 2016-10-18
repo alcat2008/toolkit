@@ -8,6 +8,10 @@
 
 [WebStorm](./WebStorm.md)
 
+[Git](./Git.md)
+
 [Beyond Compare](./Beyond Compare.md)
 
 [Wireshark](./Wireshark.md)
+
+[Nginx](./Nginx.md)
