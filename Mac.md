@@ -70,3 +70,20 @@ Command-Z
 
 `cmd-shift-3` 截取全部屏幕<br>
 `cmd-shift-4` 截取部分屏幕<br>
+
+
+--------------------------------------------------------------------------------
+
+# 修改 hosts 文件
+
+** hosts 文件地址
+
+```shell
+/private/etc/hosts
+```
+
+** 刷新 DNS 缓存
+
+```shell
+sudo killall -HUP mDNSResponder
+```
