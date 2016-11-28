@@ -28,6 +28,17 @@ http://localhost:8080
 /usr/local/etc/nginx/nginx.conf
 ```
 
+### SPA 路由
+
+现在 Web 项目基本上都是单页面应用（SPA），其路由是内部控制，需要在 nginx 做特殊配置支持。
+
+```shell
+location / {
+  index  index.html index.htm;
+  try_files $uri $uri/ /index.html;
+}
+```
+
 ### gzip
 
 默认情况下，nginx 的 gzip 压缩是关闭的。
@@ -61,3 +72,34 @@ gzip_vary           on;
 - gzip_types
 
   什么类型的页面或文档启用压缩。
+
+### 使用 proxy_pass 反向代理时，cookie 丢失的问题
+
+1. 如果只是host、端口转换，则cookie不会丢失。例如：
+
+```shell
+location /project {
+  proxy_pass   http://127.0.0.1:8080/project;
+}  
+```
+
+通过浏览器访问http://127.0.0.1/project时，浏览器的cookie内有jsessionid。再次访问时，浏览器会发送当前的cookie。
+
+2. 如果路径也变化了，则需要设置cookie的路径转换，nginx.conf的配置如下
+    location /proxy_path {
+        proxy_pass   http://127.0.0.1:8080/project;
+    }
+
+通过浏览器访问http://127.0.0.1/proxy_path时，浏览器的cookie内没有jsessionid。再次访问时，后台当然无法获取到cookie了。
+详细看了文档：http://nginx.org/en/docs/http/ngx_http_proxy_module.html?&_ga=1.161910972.1696054694.1422417685#proxy_cookie_path
+
+加上路径转换：`proxy_cookie_path  /project /proxy_path`;
+
+则可以将project的cookie输出到proxy_path上。正确的配置是：
+
+```shell
+location /proxy_path {
+  proxy_pass   http://127.0.0.1:8080/project;
+  proxy_cookie_path  /project /proxy_path;
+}
+```
