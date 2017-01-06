@@ -63,6 +63,16 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 ```
 
+## 删除
+
+```shell
+find ~ -name ".DS_Store" -delete
+
+或者
+
+find <your path> -name ".DS_Store" -delete
+```
+
 --------------------------------------------------------------------------------
 
 # 快捷键 shortcuts
