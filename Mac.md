@@ -47,6 +47,24 @@ killall Finder
 
 --------------------------------------------------------------------------------
 
+# .DS_Store
+
+## 禁止生成
+
+打开 “终端” ，复制黏贴下面的命令，回车执行，重启 Mac 即可生效。
+
+```shell
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+```
+
+## 恢复生成
+
+```shell
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+```
+
+--------------------------------------------------------------------------------
+
 # 快捷键 shortcuts
 
 本文仅列出常用的快捷键，详细请参考官网 [Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
