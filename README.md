@@ -12,6 +12,8 @@
 
 [Beyond Compare](./Beyond Compare.md)
 
+[Charles](./Charles.md)
+
 [Wireshark](./Wireshark.md)
 
 [Nginx](./Nginx.md)
