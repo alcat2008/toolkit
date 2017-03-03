@@ -28,6 +28,9 @@ $ git config -e [--global]
 # 设置提交代码时的用户信息
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
+
+# 忽略大小写
+$ git config --global core.ignorecase false
 ```
 
 ## 增加/删除文件
