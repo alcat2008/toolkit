@@ -66,11 +66,11 @@ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 ## 删除
 
 ```shell
-find ~ -name ".DS_Store" -delete
+sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
 或者
 
-find <your path> -name ".DS_Store" -delete
+find <your path> -name ".DS_Store" -depth -exec rm {} \;
 ```
 
 --------------------------------------------------------------------------------
