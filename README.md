@@ -12,7 +12,7 @@
 
 [Git](./Git.md)
 
-[Beyond Compare](./Beyond Compare.md)
+[Beyond Compare](./Beyond%20Compare.md)
 
 [Charles](./Charles.md)
 
