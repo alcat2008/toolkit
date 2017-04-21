@@ -368,3 +368,10 @@ Step 4\. Push the result of the merge to GitLab
 ```shell
 git push origin develop
 ```
+
+
+## Prune .git directory
+
+```shell
+git gc --prune=now --aggressive
+```
