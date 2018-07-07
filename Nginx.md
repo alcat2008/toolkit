@@ -73,6 +73,19 @@ gzip_vary           on;
 
   什么类型的页面或文档启用压缩。
 
+###  强制使用 https (http 跳转到 https)
+
+将所有的 http 请求通过 rewrite 重写到 https
+
+```shell
+server {
+    listen       80;
+    server_name  <域名>;
+
+    rewrite ^(.*)$    https://$host$1    permanent;
+}
+```
+
 ### 使用 proxy_pass 反向代理时，cookie 丢失的问题
 
 1. 如果只是host、端口转换，则cookie不会丢失。例如：
