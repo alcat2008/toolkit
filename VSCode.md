@@ -55,3 +55,39 @@ F12 - 跳转至定义行<br>
 ⌃Tab - 切换当前子窗口的标签页<br>
 ⌃` - 打开内置 Terminal 窗口<br>
 ⌘⇧U - 打开/关闭 Output 窗口，可查看 Extensions/Git/Task 输出<br>
+
+--------------------------------------------------------------------------------
+
+# 调试 debug
+
+## launch / attach
+
+VS Code 调试信息都在配置文件 `.vscode/launch.json` 中 
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch",
+      "program": "${workspaceFolder}/app.js"
+    },
+    {
+        "type": "node",
+        "request": "attach",
+        "name": "Attach",
+        "port": 5858
+    }
+  ]
+}
+```
+
+其中参数 request 的取值有两种 `launch` 和 `attach`
+
+> launch 模式：由 vscode 来启动一个独立 Debug 程序
+> attach 模式：附加于一个已经启动的 Debug 程序

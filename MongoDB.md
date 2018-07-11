@@ -87,14 +87,14 @@ $ mongorestore -h <host> -d <dbname> --dir <dbdirectory>
 ## 重置密码
 
 ```bash
-$ vi /etc/mongodb.conf          # 修改 mongodb 配置，将 auth = true 注释掉，或者改成 false
-$ service mongodb restart       # 重启 mongodb 服务
+$ vi /etc/mongodb.conf           # 修改 mongodb 配置，将 auth = true 注释掉，或者改成 false
+$ service mongodb restart        # 重启 mongodb 服务
  
 $ mongo                          # 运行客户端（也可以去mongodb安装目录下运行这个）
 > use admin                      # 切换到系统帐户表
 > db.system.users.find()         # 查看当前帐户（密码有加密过）
 > db.system.users.remove({})     # 删除所有帐户
-> db.addUser('admin','password') # 添加新帐户
+> db.createUser({ user: '<username>', pwd: '<password>', roles: [{ role: 'readWrite', db: '<dbname>' }] })
  
 $ vi /etc/mongodb.conf           # 恢复 auth = true
 $ service mongodb restart        # 重启 mongodb 服务
