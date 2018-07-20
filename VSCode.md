@@ -60,6 +60,8 @@ F12 - 跳转至定义行<br>
 
 # 调试 debug
 
+官网文档 [Debugging](https://code.visualstudio.com/docs/editor/debugging)
+
 ## launch / attach
 
 VS Code 调试信息都在配置文件 `.vscode/launch.json` 中 

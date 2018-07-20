@@ -60,18 +60,19 @@ $ mongo --host <host>:27017 -u <user> -p <password> <dbname>
 
 
 > help
-> db.help()                       # db详细帮助
-> db or db.getName()              # 获取当前使用的数据库名称
-> db.serverStatus()               # 服务器的状态
-> show dbs                        # 数据库列表
-> show collections                # 当前数据库下的所有集合
-> db.<collectionname>.help()      # 集合详细帮助
-> db.<collectionname>.find()      # 集合里的数据
+> db.help()                              # db详细帮助
+> db or db.getName()                     # 获取当前使用的数据库名称
+> db.serverStatus()                      # 服务器的状态
+> show dbs                               # 数据库列表
+> show collections                       # 当前数据库下的所有集合
+> db.createCollection(<collectionname>)  # 创建集合
+> db.<collectionname>.help()             # 集合详细帮助
+> db.<collectionname>.find()             # 集合里的数据
 > db.<collectionname>.count()
 > db.<collectionname>.remove({})
-> db.dropDatabase()                # 删除当前使用的数据库
-> db.stats()                       # 当前db状态
-> db.getMongo()                    # 当前db的链接地址
+> db.dropDatabase()                      # 删除当前使用的数据库
+> db.stats()                             # 当前db状态
+> db.getMongo()                          # 当前db的链接地址
 ```
 
 ## 备份与恢复
